@@ -198,6 +198,7 @@ header .hamburger span {
   opacity: 0;
   -webkit-transition: opacity .2s ease-in-out;
   transition: opacity .2s ease-in-out;
+  pointer-events: none;
 }
 
 header .hamburger span::before {
@@ -233,6 +234,10 @@ header .hamburger.show-menu .line:nth-of-type(2) {
 }
 
 header .hamburger.show-menu:hover span {
+  opacity: 1;
+}
+
+header .hamburger.show-menu:hover span::before {
   opacity: 1;
 }
 

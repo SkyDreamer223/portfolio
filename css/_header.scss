@@ -95,6 +95,7 @@ header {
             z-index: 60;
             opacity: 0;
             transition: opacity .2s ease-in-out;
+            pointer-events: none;
 
             &::before {
                 content: '';
@@ -102,6 +103,7 @@ header {
                 border: .8rem solid transparent;
                 border-right-color: $violet1;
                 left: -1.6rem;
+                
             }
         }
 
@@ -126,6 +128,11 @@ header {
 
                 span {
                     opacity: 1;
+
+                    &::before {
+                        opacity: 1;  
+                    }
+
                 }
             }
         }
