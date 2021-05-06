@@ -2,6 +2,7 @@
 html {
     font-size: 62.5%;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 *{
     margin: 0;
@@ -11,3 +12,21 @@ button {
     outline: none;
     border: none;
 }
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul {
+    list-style-type: none;
+}
+
+$violet1: #a044ff;
+$violet2: #6a3093;
+$gris: #555;
+
+$gradient : linear-gradient(to right, $violet1, $violet2);
+
+$fontPrimary: 'Baloo Da 2', serif;
+$fontSecondary: 'Josefin Slab', serif;
+$fontAction: 'Mulish', serif;

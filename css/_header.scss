@@ -26,7 +26,7 @@ header {
         h1{
             color: #ffffff;
             font-size: 5.6rem;
-            font-family: 'Baloo Da 2', serif;
+            font-family: $fontPrimary;
             font-weight: 200;
             text-shadow: .32rem .32rem 2px rgba(0, 0, 0, 0.4);
             margin-bottom: 3.2rem;
@@ -36,7 +36,7 @@ header {
         
         p {
             color: #ffffff;
-            font-family: 'Josefin Slab', serif;
+            font-family: $fontSecondary;
             font-size: 3.2rem;
             text-shadow: .2rem .2rem rgba(0, 0, 0, 0.4);
             margin-bottom: 3.2rem;
@@ -45,10 +45,10 @@ header {
         }
 
         button {
-            font-family: 'Mulish', serif;
+            font-family: $fontAction;
             font-size: 1.92;
             color: #fff;
-            background: linear-gradient(to right, #a044ff, #6a3093);
+            background: $gradient;
             padding: 1.6rem 4.8rem;
             text-transform: uppercase;
             letter-spacing: .16rem;
@@ -57,6 +57,133 @@ header {
             cursor: pointer;
             opacity: 0;
             animation: moveBanner 1s 0.9s forwards;
+        }
+    }
+    .hamburger {
+        width: 3.2rem;
+        height: 3.2rem;
+        position: fixed;
+        z-index: 100;
+        top: 3.2rem;
+        right: 3.2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        cursor: pointer;
+        transition: all .4s ease-in-out;
+    
+        .line {
+            width: 100%;
+            height: .2rem;
+            background-color: #fff;
+            box-shadow: .1rem .1rem 1px rgba(0, 0, 0, .5);
+            transition: all .4s ease-in-out;
+        }
+        span {
+            position: absolute;
+            left: 4.8rem;
+            color: #fff;
+            background: $gradient;
+            width: 9.6rem;
+            height: 3.2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font: 1.5rem $fontAction;
+            border-radius: .2rem;
+            box-shadow: .1rem .1rem 1px rgba(0, 0, 0, .5);
+            z-index: 60;
+            opacity: 0;
+            transition: opacity .2s ease-in-out;
+
+            &::before {
+                content: '';
+                position: absolute;
+                border: .8rem solid transparent;
+                border-right-color: $violet1;
+                left: -1.6rem;
+            }
+        }
+
+        &.show-menu {
+            right: 25.6rem;
+            
+            .line {
+                background-color: $violet1;
+                transform-origin: .5rem;
+
+                &:nth-of-type(1) {
+                    transform: rotate(45deg);
+                }
+                &:nth-of-type(3) {
+                    transform:rotate(-45deg);
+                }
+                &:nth-of-type(2) {
+                    opacity: 0;
+                }
+            }
+            &:hover {
+
+                span {
+                    opacity: 1;
+                }
+            }
+        }
+
+        
+    }
+    .sidebar {
+        z-index: 50;
+        width: 32rem;
+        height: 100vh;
+        background-color: #fff;
+        position: fixed;
+        top: 0;
+        right: -32rem;
+        transition: all .3s ease-in-out;
+    
+        &.show-menu {
+            right: 0;
+        }
+    
+        .menu {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+    
+            &-item {
+                text-align: center;
+                margin-bottom: .8rem;
+            }
+            &-link {
+                font-family: $fontAction;
+                font-size: 3.2rem;
+                color: $gris;
+                transition: color .2s;
+    
+                &:hover {
+                    color: $violet1;
+                }
+            }
+        }
+        .social-media {
+            position: absolute;
+            bottom: 3.2rem;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            
+            i {
+                color: $gris;
+                font-size: 4rem;
+                color: $violet2;
+                transition: color .4s;
+    
+                &:hover {
+                    color: $violet1;
+                }
+            }
         }
     }
 }
