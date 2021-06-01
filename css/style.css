@@ -4,6 +4,7 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -308,6 +309,162 @@ header .sidebar .social-media i {
 
 header .sidebar .social-media i:hover {
   color: #a044ff;
+}
+
+.presentation {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.presentation .about h1 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  font-family: "Baloo Da 2", serif;
+  font-size: 4.8rem;
+  color: #555;
+  text-align: center;
+  border-bottom: solid 4px #a044ff;
+}
+
+.presentation .about p {
+  margin-top: 3rem;
+  max-width: 60rem;
+  font-family: "Mulish", serif;
+  font-size: 2rem;
+  letter-spacing: 3px;
+  text-align: justify;
+}
+
+.timeline-container {
+  min-height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20rem;
+}
+
+.timeline-container h1 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 3rem auto;
+  font-family: "Baloo Da 2", serif;
+  font-size: 4.8rem;
+  color: #555;
+  text-align: center;
+  border-bottom: solid 4px #a044ff;
+}
+
+.timeline-container .timeline {
+  width: 80%;
+  height: auto;
+  max-width: 80rem;
+  margin: 2rem auto 2rem;
+  position: relative;
+}
+
+.timeline-container .timeline::before {
+  content: '';
+  position: absolute;
+  top: -3rem;
+  bottom: -10rem;
+  width: .5rem;
+  background-color: #a044ff;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.timeline-container .timeline ul li {
+  width: 50%;
+  position: relative;
+}
+
+.timeline-container .timeline ul li:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.timeline-container .timeline ul li:nth-of-type(odd) {
+  float: left;
+  clear: right;
+  -webkit-transform: translateX(-3rem);
+          transform: translateX(-3rem);
+}
+
+.timeline-container .timeline ul li:nth-of-type(even) {
+  float: right;
+  clear: left;
+  -webkit-transform: translateX(3rem);
+          transform: translateX(3rem);
+}
+
+.timeline-container .timeline ul li .timeline-content {
+  border-radius: 1rem;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+.timeline-container .timeline ul li .timeline-content h2 {
+  background: -webkit-gradient(linear, left top, right top, from(#a044ff), to(#6a3093));
+  background: linear-gradient(to right, #a044ff, #6a3093);
+  color: #fff;
+  overflow: hidden;
+  font-family: "Mulish", serif;
+  width: 100%;
+  padding: 1rem;
+}
+
+.timeline-container .timeline ul li .timeline-content p {
+  color: #a044ff;
+  background-color: #fafafa;
+  font-family: "Mulish", serif;
+  width: 100%;
+  padding: 1rem;
+}
+
+.timeline-container .timeline ul li::after {
+  content: '';
+  position: absolute;
+  height: 2rem;
+  width: 2rem;
+  background-color: #fafafa;
+  border-radius: 50%;
+  border: solid 0.6rem #6a3093;
+  top: 50%;
+}
+
+.timeline-container .timeline ul li:nth-of-type(even)::after {
+  left: -3rem;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.timeline-container .timeline ul li:nth-of-type(odd)::after {
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  right: -3rem;
 }
 
 .section-competences {

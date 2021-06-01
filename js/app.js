@@ -6,4 +6,8 @@ document.addEventListener("DOMContentLoaded", (e)=>{
         document.querySelector(".sidebar").classList.toggle("show-menu");
         hamburger.classList.toggle("show-menu");
     })
+
+    
+
+    
 });
