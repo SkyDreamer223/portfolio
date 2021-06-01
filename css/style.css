@@ -685,4 +685,160 @@ header .sidebar .social-media i:hover {
   visibility: visible;
   opacity: 1;
 }
+
+.section-contact {
+  width: 100%;
+  height: 100vh;
+  background-color: #242424;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-contact .contact-wrapper {
+  width: 60%;
+  height: 48rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 0 3.2rem 4.8rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0 3.2rem 4.8rem rgba(0, 0, 0, 0.5);
+}
+
+.section-contact .contact-wrapper .contact-left {
+  width: 35%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.6)), to(rgba(22, 22, 22, 0.9))), url("/asset/contact.jpg");
+  background: linear-gradient(rgba(15, 15, 15, 0.6), rgba(22, 22, 22, 0.9)), url("/asset/contact.jpg");
+  background-size: cover;
+}
+
+.section-contact .contact-wrapper .contact-right {
+  width: 65%;
+  background-color: #eee;
+  padding: 1.6rem 4.8rem 4.8rem;
+}
+
+.section-contact .contact-wrapper .contact-right h1 {
+  width: 100%;
+  text-align: center;
+  font-family: "Baloo Da 2", serif;
+  color: #272727;
+  font-size: 4.8rem;
+  font-weight: lighter;
+}
+
+.section-contact .contact-wrapper .contact-right form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-contact .contact-wrapper .contact-right form .input-group {
+  position: relative;
+}
+
+.section-contact .contact-wrapper .contact-right form .input-group .field {
+  background: transparent;
+  border: none;
+  width: 32rem;
+  font-size: 2.4;
+  font-family: "Josefin Slab", serif;
+  border-bottom: dashed 1px #636363;
+  height: 4.8rem;
+  outline: none;
+  margin: 1.6rem 0;
+}
+
+.section-contact .contact-wrapper .contact-right form .input-group .field:focus ~ label, .section-contact .contact-wrapper .contact-right form .input-group .field:valid ~ label {
+  top: 0;
+  font-size: 1.12rem;
+}
+
+.section-contact .contact-wrapper .contact-right form .input-group textarea {
+  padding-top: 1.6rem;
+  max-width: 40rem;
+  max-height: 4.8rem;
+}
+
+.section-contact .contact-wrapper .contact-right form .input-group .field-label {
+  position: absolute;
+  left: 0;
+  top: 3.2rem;
+  font-size: 1.6rem;
+  font-family: "Josefin Slab", serif;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.section-contact .contact-wrapper .contact-right form .btn-submit {
+  padding: .8rem 2rem;
+  font-family: "Mulish", serif;
+  background: -webkit-gradient(linear, left top, right top, from(#a044ff), to(#6a3093));
+  background: linear-gradient(to right, #a044ff, #6a3093);
+  cursor: pointer;
+  text-transform: capitalize;
+  border-radius: .2rem;
+  -webkit-box-shadow: 0 0.16rem 5px 0.1rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0.16rem 5px 0.1rem rgba(0, 0, 0, 0.4);
+  color: #eee;
+  text-shadow: 0 0.16rem 0.48rem rgba(0, 0, 0, 0.5);
+}
+
+footer {
+  width: 100%;
+  height: 11.2rem;
+  background-color: #17181b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer-content {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .footer-content p {
+  font-family: "Josefin Slab", serif;
+  color: #a7a7a7;
+  font-size: 1.92rem;
+}
+
+footer .footer-content .social-list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .footer-content .social-list ul li a {
+  margin: 0 3.2rem;
+  color: #a7a7a7;
+  font-size: 2.08rem;
+}
 /*# sourceMappingURL=style.css.map */

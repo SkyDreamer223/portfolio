@@ -1,0 +1,39 @@
+footer{
+    width: 100%;
+    height: 11.2rem;
+    background-color: #17181b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .footer-content{
+      width: 60%;
+      display: flex;
+      justify-content: space-between;
+      
+      p{
+        font-family: $fontSecondary;
+        color: #a7a7a7;
+        font-size: 1.92rem;
+      }
+      
+      .social-list{
+        
+        ul {
+            display: flex;
+
+            li{
+                
+                a{
+                    margin: 0 3.2rem;
+                    color: #a7a7a7;
+                    font-size: 2.08rem;
+                }
+            }
+        }
+      } 
+    }
+  }
+  
+  
+  
+  
