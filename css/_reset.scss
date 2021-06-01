@@ -34,3 +34,28 @@ $gradient : linear-gradient(to right, $violet1, $violet2);
 $fontPrimary: 'Baloo Da 2', serif;
 $fontSecondary: 'Josefin Slab', serif;
 $fontAction: 'Mulish', serif;
+
+.section-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        font-family: $fontPrimary;
+        font-size: 4.8rem;
+        color: #4b4b4b;
+        border-bottom: solid 3px $violet1;
+        margin-bottom: 1.6rem;
+
+    }
+}
+
+$violet1: #a044ff;
+$violet2: #6a3093;
+$gris: #555;
+
+$gradient : linear-gradient(to right, $violet1, $violet2);
+
+$fontPrimary: 'Baloo Da 2', serif;
+$fontSecondary: 'Josefin Slab', serif;
+$fontAction: 'Mulish', serif;
